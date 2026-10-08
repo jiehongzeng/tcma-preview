@@ -329,7 +329,7 @@ footer b{color:white}.footer-motto{font:700 25px "LiSu","隸書","KaiTi",serif;c
 .registration .button{display:inline-block;margin-top:10px;padding:9px 18px}
 @media(max-width:900px){
  .mobile-toggle{display:block;margin-left:auto}
- header .nav{position:relative}
+ header .nav{position:relative;flex-wrap:wrap}
  header nav{display:none;position:absolute;top:100%;left:0;right:0;z-index:30;background:var(--paper-2);border:1px solid var(--line);box-shadow:0 12px 24px #10273d22;padding:8px 15px;flex-direction:column;gap:0}
  header nav.is-open{display:flex}
  header nav a{padding:11px 8px;border-bottom:1px solid var(--line)}
@@ -338,17 +338,22 @@ footer b{color:white}.footer-motto{font:700 25px "LiSu","隸書","KaiTi",serif;c
 }
 @media(max-width:560px){.registration dl{grid-template-columns:1fr;gap:2px}.registration dd{margin-bottom:10px}.registration{padding:48px 0}.registration .certificate{max-height:none}}
 </style>
+<style id="home-shortcut-style">
+.home-shortcut{position:fixed;right:18px;bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:9999;display:flex;align-items:center;gap:7px;padding:10px 16px;background:#183653;color:#fff!important;border:1px solid #c49a52;border-radius:30px;box-shadow:0 5px 18px #10273d45;font-size:15px;font-weight:700;text-decoration:none;line-height:1.5}
+.home-shortcut:hover,.home-shortcut:focus-visible{background:#8d3b30;color:#fff!important}
+@media(min-width:881px){.home-shortcut{right:25px;bottom:24px}}
+</style>
 </head>
 <body>
 
 <header>
   <div class="wrap nav">
-    <div class="brand">
+    <a class="brand" href="index.html" aria-label="返回協會首頁">
       <div>
         <div class="brand-name lishu">臺灣復興中華傳統武術協會</div>
         <div class="brand-en">Traditional Chinese Martial Arts Revival Association of Taiwan</div>
       </div>
-    </div>
+    </a>
     <button class="mobile-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="開啟導覽選單">☰ <span>選單</span></button>
     <nav id="site-nav">
       <a href="#origin">協會緣起</a>
@@ -586,5 +591,6 @@ footer b{color:white}.footer-motto{font:700 25px "LiSu","隸書","KaiTi",serif;c
  document.addEventListener('keydown',e=>{if(e.key==='Escape')close()});
 })();
 </script>
+<a class="home-shortcut" href="index.html" aria-label="返回協會首頁">⌂ 返回首頁</a>
 </body>
 </html>
