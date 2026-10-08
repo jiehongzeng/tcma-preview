@@ -343,6 +343,11 @@ footer b{color:white}.footer-motto{font:700 25px "LiSu","隸書","KaiTi",serif;c
 .home-shortcut:hover,.home-shortcut:focus-visible{background:#8d3b30;color:#fff!important}
 @media(min-width:881px){.home-shortcut{right:25px;bottom:24px}}
 </style>
+<style id="v16-style">
+html{scroll-padding-top:90px}img{max-width:100%;height:auto} .gallery img,.feature-art img{height:100%;object-fit:cover}
+.v16-section{padding:70px 0;background:#fbf7ee}.v16-alt{background:#f0e5ce}.v16-section h2{font-size:clamp(28px,4vw,40px);color:#183653;margin:4px 0 12px}.v16-lead{max-width:780px;color:#575c60;margin:0 0 25px}.v16-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.v16-card{padding:25px;background:#fffaf0;border:1px solid #d9c9a8;min-width:0}.v16-card span{color:#996e32;font-size:12px;letter-spacing:.12em}.v16-card h3{color:#183653;margin:8px 0;font-size:21px}.v16-card p{margin:0 0 12px}.v16-card a,.v16-note a{color:#8d3b30;text-decoration:underline;text-underline-offset:3px}.v16-note{margin-top:20px}
+@media(max-width:900px){.v16-cards{grid-template-columns:1fr}header nav.is-open{display:flex!important}header nav{max-height:calc(100dvh - 75px);overflow-y:auto}header nav a{font-size:16px}}@media(max-width:560px){.v16-section{padding:46px 0}.v16-card{padding:19px}.nav{min-height:68px}.brand-name{font-size:16px}.mobile-toggle{white-space:nowrap}}
+</style>
 </head>
 <body>
 
@@ -356,13 +361,14 @@ footer b{color:white}.footer-motto{font:700 25px "LiSu","隸書","KaiTi",serif;c
     </a>
     <button class="mobile-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="開啟導覽選單">☰ <span>選單</span></button>
     <nav id="site-nav">
-      <a href="#origin">協會緣起</a>
-      <a href="heritage.html">專項武學</a>
-      <a href="#heritage">傳承脈絡</a>
-      <a href="#values">術德精神</a>
+      <a href="index.html">首頁</a>
+      <a href="#origin">認識協會</a>
+      <a href="heritage.html">傳統武學</a>
+      <a href="#courses">課程研習</a>
+      <a href="#news">最新消息</a>
       <a href="#gallery">活動紀錄</a>
-      <a href="#registration">立案資訊</a>
-      <a href="#join">加入協會</a>
+      <a href="#members">會員專區</a>
+      <a href="#join">加入與聯絡</a>
     </nav>
   </div>
 </header>
@@ -522,11 +528,11 @@ footer b{color:white}.footer-motto{font:700 25px "LiSu","隸書","KaiTi",serif;c
     <div class="section-title">
       <div class="en">RECORDS</div>
       <h2 class="lishu">武學內蘊</h2>
-      <p>形於外，而意存於內；以仿古圖譜呈現拳、器與傳承之間的精神脈絡。</p>
+      <p>形於外，而意存於內；以拳術修身，以兵器磨藝，承續傳統武學之精神與技藝。</p>
     </div>
     <div class="gallery">
-      <figure><img src="images/manual-fist.jpg" alt="仿古拳術圖譜"><figcaption><b class="lishu">拳法之本</b>根於足，發於腿，主宰於腰</figcaption></figure>
-      <figure><img src="images/manual-weapons.jpg" alt="仿古槍劍圖譜"><figcaption><b class="lishu">器械之道</b>手中有器，心中更須有度</figcaption></figure>
+      <figure><img src="images/manual-fist.jpg" alt="拳術文化意象插畫"><figcaption><b class="lishu">拳法之本</b>根於足，發於腿，主宰於腰</figcaption></figure>
+      <figure><img src="images/manual-weapons.jpg" alt="兵器文化意象插畫"><figcaption><b class="lishu">器械之道</b>手中有器，心中更須有度</figcaption></figure>
       <figure><img src="images/manual-heritage.jpg" alt="武學古卷與器械意象"><figcaption><b class="lishu">術德相承</b>所傳是技，所承是心</figcaption></figure>
     </div>
   </div>
@@ -549,6 +555,14 @@ footer b{color:white}.footer-motto{font:700 25px "LiSu","隸書","KaiTi",serif;c
     </div>
   </div></div>
 </section>
+
+
+<section id="news" class="v16-section" aria-labelledby="news-title"><div class="wrap">
+<div class="eyebrow">LATEST NEWS</div><h2 id="news-title" class="lishu">最新消息</h2>
+<p class="v16-lead">協會公告、研習課程與活動資訊將陸續於此更新。歡迎會員及各界朋友持續關注。</p>
+<div class="v16-cards"><article class="v16-card"><span>協會公告</span><h3>內政部正式立案</h3><p>本會已依法完成全國性人民團體立案，持續推動傳統武術教育與文化傳承。</p><a href="#registration">查看立案資訊 →</a></article><article class="v16-card"><span>課程資訊</span><h3>傳統武學研習</h3><p>規劃基礎體驗、拳械研習及進階精修課程；開課時間與報名辦法以正式公告為準。</p><a href="#courses">了解課程方向 →</a></article><article class="v16-card"><span>活動資訊</span><h3>協會活動與交流</h3><p>透過會員交流、公益體驗及文化活動，讓傳統武術在當代持續傳習。</p><a href="#gallery">瀏覽活動紀錄 →</a></article></div></div></section>
+<section id="courses" class="v16-section v16-alt" aria-labelledby="courses-title"><div class="wrap"><div class="eyebrow">CLASSES & WORKSHOPS</div><h2 id="courses-title" class="lishu">課程與研習</h2><p class="v16-lead">依不同程度規劃學習方向，實際課程、費用與報名資格將另行公告。</p><div class="v16-cards"><article class="v16-card"><span>入門</span><h3>基礎體驗</h3><p>傳統武術基本功、身法與文化入門，適合初學者了解習武之道。</p></article><article class="v16-card"><span>研習</span><h3>拳術與兵器</h3><p>長拳、螳螂拳、內家拳與傳統兵器的分級研習。</p></article><article class="v16-card"><span>進階</span><h3>精修與傳承</h3><p>依習武基礎及課程要求進行評估，著重功法、拳械與對練。</p></article></div><p class="v16-note">有意參與課程者，請先來信洽詢：<a href="mailto:taiwan.tcmart@gmail.com">taiwan.tcmart@gmail.com</a></p></div></section>
+<section id="members" class="v16-section" aria-labelledby="members-title"><div class="wrap"><div class="eyebrow">MEMBER INFORMATION</div><h2 id="members-title" class="lishu">會員專區</h2><p class="v16-lead">提供會員交流、研習活動與協會公告入口。會員限定教材與個人資料暫不公開上網。</p><div class="v16-cards"><article class="v16-card"><h3>會員活動</h3><p>會員日、武學交流與共同研習資訊，依協會正式公告辦理。</p></article><article class="v16-card"><h3>學習資源</h3><p>未來逐步規劃教材與教學影片；涉及會員權限的內容另採適當管理方式。</p></article><article class="v16-card"><h3>加入協會</h3><p>歡迎認同傳統武術文化推廣與傳承理念的朋友洽詢入會。</p><a href="#join">聯絡協會 →</a></article></div></div></section>
 
 <section id="join" class="join">
   <div class="wrap">
